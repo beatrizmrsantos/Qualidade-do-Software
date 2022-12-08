@@ -15,11 +15,11 @@ public class CarDealerClass implements Dealer{
     private static final int HIGH_THRESHOLD = 50000;
 
     @Override
-    public int salary(CommissionKind kind, int base, int sales) {
+    public int salary(CommissionKind kind, int base, int sales) throws Exception {
         int result = 0;
 
         if(base < 0 || sales < 0 ){
-            throw new Error("invalid input");
+            throw new Exception("invalid input");
         }
 
         if (kind.equals(CommissionKind.FLAT)) {

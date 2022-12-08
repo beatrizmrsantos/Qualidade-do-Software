@@ -11,5 +11,5 @@ public interface Dealer {
      * @return An integer representing the salary to be paid to the employee.
      * @author Miguel Goulao
      */
-    int salary(CommissionKind kind, int base, int sales);
+    int salary(CommissionKind kind, int base, int sales) throws Exception;
 }
